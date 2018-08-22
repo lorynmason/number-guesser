@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700" rel="stylesheet">
+  <title>Number Guesser</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+<header>
+  <h1><span>Number</span> Guesser</h1>
+</header>
+<fieldset class="guesser">
+  <form>
+    <label for ="guess">
+      <input type="number" placeholder="Enter your guess" class="guess1" min="1" max="100" required>
+      <input type="submit" name="Guess" value="Guess" class="submit1">
+      <input type="reset" value="Clear" class="clear1" disabled>
+    </label>
+  </form>
+</fieldset>
+<section class="results">
+  <p class= "guess-was">Guess a Number between <span class= "range">1-100<span></p>
+  <p class="old-guess">?</p>
+  <p class="low-or-hi">Give it a try!</p>
+<!-- <fieldset> -->
+  <input type="reset" name="Reset" class="reset1" disabled>
+<!-- </fieldset> -->
+</section>
+
+<script type="text/javascript" src="guesser.js"></script>
+
+</body>
+</html>
