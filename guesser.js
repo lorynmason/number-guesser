@@ -6,7 +6,7 @@ var clear1 = document.querySelector('.clear1');
 var reset1 = document.querySelector('.reset1');
 var oldGuess = document.querySelector('.old-guess');
 var guessWas = document.querySelector('.guess-was');
-var maxRangeElem = document.querySelector('.max-range');
+// var maxRangeElem = document.querySelector('.max-range');
 var maxRange = 100;
 var minRange = 1;
 var rangeButton = document.querySelector('.user-range-button')
@@ -17,7 +17,8 @@ userGuess.addEventListener('keydown', enableButton1);
 rangeButton.addEventListener('click', setUserRange);
 
 function setUserRange() {
-  maxRange = maxRangeElem.value;
+  // maxRange = maxRangeElem.value;
+  maxRange = document.querySelector('.min-range').value;
   minRange = document.querySelector('.min-range').value;
   parseMinRange = Math.ceil(parseInt(minRange));
   parseMaxRange = Math.floor(parseInt(maxRange));
